@@ -2,9 +2,9 @@
   hosts: mongodb
   # these are play level variables
   vars:
-    COURSE: DevOps
-    TRAINER: Shivakumar
-    DURATION: 100Hrs
+    COURSE: Python
+    TRAINER: Kishore
+    DURATION: 20Hrs
 
   tasks:
   - name: printing of hello world
