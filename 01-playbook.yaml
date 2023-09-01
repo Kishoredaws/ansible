@@ -1,9 +1,9 @@
 # Play book
-name: piniging of the server
-hosts: mongodb
+- name: piniging of the server
+  hosts: mongodb
 # list of tasks
-tasks: 
-- name: pinging the server
+  tasks: 
+  - name: pinging the server
 # this is the map
-  ansible.builtin.ping: 
+    ansible.builtin.ping: 
 
