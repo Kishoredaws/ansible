@@ -1,6 +1,7 @@
 # install and run the nginx service
 - name: install and run nginx
   hosts: mongodb
+  become: yes
 
   tasks: 
   - name: install nginx
