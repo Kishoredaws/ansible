@@ -1,0 +1,12 @@
+#varaibles from files
+-name: varaibles from files
+ hosts: localhost
+
+ vars_files:
+ - varaibles.yaml
+
+ tasks:
+ - name: printing varaibles
+   ansible.builtin.debug:
+     msg: "we are learning {{NAME}}, the durarion is {{DURATION}}, the trainer is {{TRAINER}}"
+     
