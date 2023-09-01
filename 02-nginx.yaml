@@ -1,0 +1,13 @@
+# install and run the nginx service
+- name: install and run nginx
+  hosts: mongodb
+
+  tasks: 
+  - name: install nginx
+    ansible.builtin.yum:
+      name: nginx
+      state: installed
+  - name: run nginx
+    ansible.builtin.service:
+      name: nginx
+      state: started
