@@ -1,0 +1,16 @@
+- name: varaibles at task level
+  hosts: localhost
+  vars: 
+  - money: 100000
+  - land: 100 acres
+  tasks: 
+  - name: inherit values from play
+    ansible.builtin.debug:
+      msg: "The MONEY is {{money}}, the LAND is {{land}}"
+  - name: inherit values from play and add and override
+    vars:
+    - money: 200000
+    - houses: 3 houses
+    ansible.builtin.debug:
+      msg: "The MONEY is {{money}}, the LAND is {{land}}, the houses is {{houses}}"
+
