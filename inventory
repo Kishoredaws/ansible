@@ -1,6 +1,10 @@
 [mongodb]
 roboshop-us-dev-db-mongodb-01.kishoremerugudevops.online
 
+[mongodb:vars]
+MONGO_USERNAME=mongodebadmin
+MONGO_DB=categories
+
 [mysql]
 roboshop-us-dev-db-mysql-01.kishoremerugudevops.online
 roboshop-us-dev-db-mysql-02.kishoremerugudevops.online
